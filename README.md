@@ -8,4 +8,3 @@
 - [ESlint Code Guide](http://eslint.org/docs/user-guide/configuring)
 - [ESlint Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs)
 - [Anthony extended ESLint rules. For antfu/eslint-config.](https://github.com/antfu/eslint-plugin-antfu)
-
