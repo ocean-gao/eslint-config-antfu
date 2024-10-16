@@ -21,3 +21,23 @@ export default antfu({
   ...config
 })
 ```
+
+## 3. 发版
+
+先登录：
+
+```bash
+npm adduser --registry=https://registry.npmjs.org/
+# npm notice Log in on https://registry.npmjs.org/
+# Create your account at:
+# https://www.npmjs.com/login?next=/login/cli/1a7636a8-1102-4c6c-b50d-b86ae5662656
+# Press ENTER to open in the browser...
+
+# Logged in on https://registry.npmjs.org/.
+```
+
+发版:
+
+```bash
+npm run release
+```
