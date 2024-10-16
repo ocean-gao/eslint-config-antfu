@@ -24,7 +24,14 @@ export default antfu({
 
 ## 3. 发版
 
-先登录：
+判断网络环境:
+
+```bash
+curl https://registry.npmjs.org
+# {}
+```
+
+若当前项目未登录过则:
 
 ```bash
 npm adduser --registry=https://registry.npmjs.org/
