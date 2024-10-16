@@ -1,7 +1,7 @@
 {
   "name": "@oceanopen/eslint-config-antfu",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.15.9",
   "description": "Eslint config for antfu/eslint-config",
   "publishConfig": {
