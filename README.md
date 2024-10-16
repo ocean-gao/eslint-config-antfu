@@ -14,12 +14,12 @@
 ```js
 // eslint.config.js 或 eslint.config.mjs
 
-import antfu from '@antfu/eslint-config'
-import config from '@oceanopen/eslint-config-antfu'
+import antfu from '@antfu/eslint-config';
+import defaultConfig from '@oceanopen/eslint-config-antfu';
 
 export default antfu({
-  ...config
-})
+  ...defaultConfig
+});
 ```
 
 ## 3. 发版
