@@ -2,12 +2,12 @@
 
 ## 1. 相关链接
 
-- [腾讯云 - 开发者社区 - ESLint 教程](https://cloud.tencent.com/developer/section/1135602)
+- [Antfu Eslint Config](https://github.com/antfu/eslint-config)
+- [Anthony extended ESLint rules. For antfu/eslint-config.](https://github.com/antfu/eslint-plugin-antfu)
 - [eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy)
-- [eslint-config](https://github.com/antfu/eslint-config)
 - [ESlint Code Guide](http://eslint.org/docs/user-guide/configuring)
 - [ESlint Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs)
-- [Anthony extended ESLint rules. For antfu/eslint-config.](https://github.com/antfu/eslint-plugin-antfu)
+- [腾讯云 - 开发者社区 - ESLint 教程](https://cloud.tencent.com/developer/section/1135602)
 
 ## 2.使用
 
@@ -17,9 +17,21 @@
 import antfu from '@antfu/eslint-config';
 import defaultConfig from '@oceanopen/eslint-config-antfu';
 
-export default antfu({
-  ...defaultConfig
-});
+export default antfu(
+  // Configures for antfu's default config
+  {
+    ...defaultConfig
+  },
+  // From the second arguments they are ESLint Flat Configs
+  // you can have multiple configs
+  {
+    files: ['**/*.ts'],
+    rules: {},
+  },
+  {
+    rules: {},
+  },
+);
 ```
 
 ## 3. 发版
