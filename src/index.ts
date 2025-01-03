@@ -6,8 +6,8 @@ const optionsConfig = {
     quotes: 'single',
     semi: true,
   },
-  overrides: {
-    vue: {
+  vue: {
+    overrides: {
       'vue/html-self-closing': ['error', {
         html: {
           void: 'always',
